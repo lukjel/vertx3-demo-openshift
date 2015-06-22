@@ -1,7 +1,9 @@
 package com.git;
 
-import io.vertx.core.logging.impl.LogDelegate;
-import io.vertx.core.logging.impl.LogDelegateFactory;
+import io.vertx.core.spi.logging.LogDelegate;
+import io.vertx.core.spi.logging.LogDelegateFactory;
+
+
 
 /**
  *

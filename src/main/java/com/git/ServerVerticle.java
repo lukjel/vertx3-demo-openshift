@@ -3,7 +3,7 @@ package com.git;
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.http.HttpServer;
 import io.vertx.core.logging.Logger;
-import io.vertx.core.logging.impl.LoggerFactory;
+import io.vertx.core.logging.LoggerFactory;
 import io.vertx.ext.web.Router;
 import io.vertx.ext.web.handler.StaticHandler;
 import io.vertx.ext.web.handler.sockjs.BridgeOptions;
@@ -37,6 +37,6 @@ public class ServerVerticle extends AbstractVerticle {
         router.route("/eventbus/*").handler(sockJS);
         router.route("/*").handler(StaticHandler.create("webroot"));
         http.requestHandler(router::accept).listen(port,httpAddress);
-        log.debug("start end");
+        log.debug("end");
     }
 }

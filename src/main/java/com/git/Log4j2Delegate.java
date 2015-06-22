@@ -1,6 +1,6 @@
 package com.git;
 
-import io.vertx.core.logging.impl.LogDelegate;
+import io.vertx.core.spi.logging.LogDelegate;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
